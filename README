@@ -1,0 +1,84 @@
+embryo
+------------------------------------------
+Embryo is primarily a shared library that gives you an API to load and 
+control interpreted programs compiled into an abstract machine bytecode 
+that it understands.  This abstract (or virtual) machine is similar to a 
+real machine with a CPU, but it is emulated in software.  The 
+architecture is simple and is the same as the abstract machine (AMX) in 
+the PAWN language (formerly called SMALL) as it is based on exactly the 
+same code. Embryo has modified the code for the AMX extensively and has 
+made it smaller and more portable.  It is VERY small.  The total size of 
+the virtual machine code AND header files is less than 2500 lines of 
+code.  It includes the floating point library support by default as 
+well.  This makes it one of the smallest interpreters around, and thus 
+makes is very efficient to use in code.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.enlightenment.org/
+
+Canonical download:
+  http://download.enlightenment.org/snapshots/
+
+-------------------------------------------
+
+Build instructions:
+  unpack embryo-0.9.9.050-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./embryo-0.9.9.050-X.cygport all
+
+This will create:
+  /usr/src/embryo-0.9.9.050-X-src.tar.bz2
+  /usr/src/embryo-0.9.9.050-X.tar.bz2
+  /usr/src/libembryo-devel-0.9.9.050-X.tar.bz2
+  /usr/src/libembryo0-0.9.9.050-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(embryo)
+  /usr/bin/embryo_cc.exe
+  /usr/share/doc/embryo-0.9.9.050/AUTHORS
+  /usr/share/doc/embryo-0.9.9.050/COPYING
+  /usr/share/doc/embryo-0.9.9.050/INSTALL
+  /usr/share/doc/embryo-0.9.9.050/README
+  /usr/share/embryo/include/default.inc
+
+(libembryo0)
+  /usr/bin/cygembryo-0.dll
+
+(libembryo-devel)
+  /usr/include/enlightenment/Embryo.h
+  /usr/lib/libembryo.a
+  /usr/lib/libembryo.dll.a
+  /usr/lib/libembryo.la
+  /usr/lib/pkgconfig/embryo.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.9.9.050-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

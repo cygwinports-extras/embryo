@@ -1,0 +1,13 @@
+--- origsrc/embryo-0.9.9.050/configure.in	2008-09-24 21:21:46.000000000 -0500
++++ src/embryo-0.9.9.050/configure.in	2008-12-24 01:57:15.912375000 -0600
+@@ -46,6 +46,10 @@
+ 		fi
+ 		lt_no_undefined="-no-undefined"
+ 		;;
++	cygwin*)
++		AC_CHECK_FUNCS(gettimeofday)
++		lt_no_undefined="-no-undefined"
++		;;
+ 	*)
+ 		AC_CHECK_FUNCS(gettimeofday)
+ esac

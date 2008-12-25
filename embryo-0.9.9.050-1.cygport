@@ -1,0 +1,11 @@
+DESCRIPTION="Enlightenment scripting component"
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="http://download.enlightenment.org/snapshots/2008-09-25/${P}.tar.bz2"
+PATCH_URI="0.9.9-no-undefined.patch"
+
+PKG_NAMES="${PN} libembryo0 libembryo-devel"
+embryo_CONTENTS="usr/bin/*.exe usr/share/"
+libembryo0_CONTENTS="usr/bin/*-0.dll"
+libembryo_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--includedir=/usr/include/enlightenment"
