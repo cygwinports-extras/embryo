@@ -1,5 +1,5 @@
 category: Interpreters
-requires: cygwin libembryo0
+requires: libembryo0
 external-source: embryo
 sdesc: "Enlightenment bytecode virtual machine (libdevel)"
 ldesc: "Embryo is primarily a shared library that gives you an API to 
