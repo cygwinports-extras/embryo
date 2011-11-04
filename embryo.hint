@@ -1,5 +1,5 @@
 category: Interpreters
-requires: libgcc1
+requires:
 sdesc: "Enlightenment bytecode virtual machine (compiler)"
 ldesc: "Embryo is primarily a shared library that gives you an API to 
 load and control interpreted programs compiled into an abstract machine 
