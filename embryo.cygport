@@ -1,0 +1,20 @@
+NAME="embryo"
+VERSION=1.7.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Enlightenment bytecode virtual machine"
+DESCRIPTION="Embryo is primarily a shared library that gives you an API to
+load and control interpreted programs compiled into an abstract machine
+bytecode that it understands.  The architecture is simple and is the same as
+the abstract machine (AMX) in the PAWN language (formerly called SMALL) as it
+is based on exactly the same code."
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+
+PKG_NAMES="libembryo1 libembryo-devel"
+libembryo1_CONTENTS="usr/bin/*-1.dll usr/share/"
+libembryo_devel_CONTENTS="usr/bin/*.exe usr/include/ usr/lib/"
+
+DIFF_EXCLUDES="Doxyfile"
+
+KEEP_LA_FILES="none"
